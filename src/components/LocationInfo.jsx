@@ -1,24 +1,39 @@
 const LocationInfo = ({ location }) => {
   return (
-    <article className="bg-card-color max-w-2xl h-40 p-10 mx-auto flex items-center justify-around mt-20">
-      <ul className="flex flex-row gap-14 text-white mt-0">
-        <li className="flex flex-col">
-          <span className="font-bold font-xl">Nombre:</span>
-          <span className="font-medium mt-1.5">{location?.name}</span>
-        </li>
-        <li className="flex flex-col">
-          <span className="font-bold">Type:</span>
-          <span className="font-medium mt-1.5">{location?.type}</span>
-        </li>
-        <li className="flex flex-col">
-          <span className="font-bold font-xl">Dimension:</span>
-          <span className="font-medium mt-1.5">{location?.dimension}</span>
-        </li>
-        <li className="flex flex-col">
-          <span className="font-bold font-xl">Population:</span>
-          <span className="font-medium mt-1.5">{location?.residents.length}</span>
-        </li>
-      </ul>
+    <article className="bg-card-color max-w-3xl h-[12rem] p-10 mx-auto flex flex-col mt-20">
+      <div className="flex items-center justify-center">
+        <span className="flex items-center justify-center text-4xl -mt-3 capitalize whitespace-nowrap text-Alive">
+          {location?.name}
+        </span>
+      </div>
+      <div className="w-full flex items-center justify-center">
+        <ul className="flex mt-8">
+          <li className="flex flex-col">
+            <span className="font-bold text-span-text-color text-center">
+              Type:
+            </span>
+            <span className="font-medium mt-1.5 whitespace-nowrap text-span-title-color capitalize">
+              {location?.type}
+            </span>
+          </li>
+          <li className="flex flex-col">
+            <span className="font-bold font-xl ml-5 text-span-text-color text-center">
+              Dimension:
+            </span>
+            <span className="font-medium mt-1.5 ml-5 whitespace-nowrap text-span-title-color text-center capitalize">
+              {location?.dimension}
+            </span>
+          </li>
+          <li className="flex flex-col">
+            <span className="font-bold font-xl ml-5 text-span-text-color text-center">
+              Population:
+            </span>
+            <span className="font-medium mt-1.5 ml-5 whitespace-nowrap text-span-title-color text-center">
+              {location?.residents.length}
+            </span>
+          </li>
+        </ul>
+      </div>
     </article>
   );
 }

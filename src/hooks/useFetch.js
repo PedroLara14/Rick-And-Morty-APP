@@ -6,8 +6,6 @@ const useFetch = url => {
   const [resp, setResp] = useState()
   const [hasError, setHasError] = useState(false)
 
-  axios.get()
-
   const getApi = () => {
     axios.get(url)
       .then(res => {
