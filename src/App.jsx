@@ -32,7 +32,7 @@ function App() {
       ) : (
         <>
           <LocationInfo location={location} />
-          <div className="resident-container max-w-5xl mx-auto grid grid-cols-4 place-items-center gap-8">
+          <div className="resident-container grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-[1rem] mx-auto max-w-[1024px] justify-center items-center">
             {location?.residents.map((url) => (
               <ResidentCard url={url} key={url} />
             ))}

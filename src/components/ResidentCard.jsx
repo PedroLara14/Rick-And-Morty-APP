@@ -11,18 +11,18 @@ const ResidentCard = ({ url }) => {
 
   
   return (
-    <article className="w-full max-w-[350px] bg-card-color text-white rounded-t-[0.3em] rounded-b-[0.3em] overflow-hidden flex flex-col mt-12 mb-4">
+    <article className="w-full max-w-[350px] bg-card-color text-white rounded-t-[0.3em] rounded-b-[0.3em] overflow-hidden flex flex-col mt-12 mb-4 card-correction">
       <header className="relative">
         <img className="w-full bg-cover" src={resident?.image} alt="" />
-        <div className="absolute top-[8%] w-[40%] min-w-[120px] rounded-r-[0.55rem] bg-card-color pt-[0.3em] pb-[0.5em] flex items-center gap-[1.5em]">
+        <div className="absolute top-[1.4rem] left-0 w-[48%] flex items-center justify-between p-[0.1rem] px-[1.3rem] rounded-r-[0.55rem] bg-card-color">
           <span
-            className={`w-[30px] -mr-3 ml-2 rounded-[50%] inline-block aspect-square ${
+            className={`w-[18%] rounded-[50%] aspect-square ${
               resident?.status === "Alive"
                 ? "bg-Alive"
                 : resident?.status === "Dead"
-                ? "bg-Dead"
+                ? "bg-Dead -ml-1"
                 : resident?.status === "Unknown"
-                ? "bg-Unknown"
+                ? "bg-Unknown ml-4"
                 : "bg-Unknown"
             }`}
           ></span>

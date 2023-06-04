@@ -1,8 +1,8 @@
 const LocationInfo = ({ location }) => {
   return (
-    <article className="bg-card-color max-w-3xl h-[12rem] p-10 mx-auto flex flex-col mt-20">
+    <article className="bg-card-color max-w-3xl h-[14rem] p-10 mx-auto flex flex-col items-center justify-center mt-20">
       <div className="flex items-center justify-center">
-        <span className="flex items-center justify-center text-4xl -mt-3 capitalize whitespace-nowrap text-Alive">
+        <span className="flex items-center text-center justify-center text-4xl -mt-3 capitalize text-Alive">
           {location?.name}
         </span>
       </div>

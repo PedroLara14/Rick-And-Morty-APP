@@ -27,3 +27,9 @@
 .scrollbar-custom::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Color del pulgar de la barra de desplazamiento al pasar el cursor sobre él */
 }
+
+@media (max-width: 400px) {
+    .card-correction {
+      margin-left: 1rem;
+    }
+  }
